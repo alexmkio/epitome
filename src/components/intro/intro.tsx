@@ -1,6 +1,7 @@
 import styles from "./intro.module.scss";
 import { Element as ReactScrollElement } from "react-scroll";
 import Link from "next/link";
+import heroImage from "../../../public/assets/images/hero-pic.webp";
 
 export default function Intro() {
   return (
@@ -18,7 +19,12 @@ export default function Intro() {
           <Link href="#about">Scroll For More</Link>
         </div>
         <div className={styles.introGrid}></div>
-        <div className={styles.introPic}></div>
+        <div
+          className={styles.introPic}
+          style={{
+            backgroundImage: `url(${heroImage.src})`,
+          }}
+        ></div>
       </div>
     </ReactScrollElement>
   );
