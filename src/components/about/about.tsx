@@ -80,7 +80,7 @@ export default function About() {
                 />
               </div>
               <div className={styles.block}>
-                <div className={styles.bullet}></div>
+                <div className={styles.bullet} />
                 <div className={styles.header}>
                   <p className={styles.timeframe}>July 2018 - Present</p>
                   <h3 className={styles.name}>Awesome Studio</h3>
@@ -96,7 +96,7 @@ export default function About() {
               </div>
 
               <div className={styles.block}>
-                <div className={styles.bullet}></div>
+                <div className={styles.bullet} />
                 <div className={styles.header}>
                   <p className={styles.timeframe}>July 2017 - June 2018</p>
                   <h3 className={styles.name}>Super Cool Agency</h3>
@@ -112,7 +112,7 @@ export default function About() {
               </div>
 
               <div className={styles.block}>
-                <div className={styles.bullet}></div>
+                <div className={styles.bullet} />
                 <div className={styles.header}>
                   <p className={styles.timeframe}>March 2016 - June 2017</p>
                   <h3 className={styles.name}>Epic Design Studio</h3>
@@ -140,7 +140,7 @@ export default function About() {
               </div>
 
               <div className={styles.block}>
-                <div className={styles.bullet}></div>
+                <div className={styles.bullet} />
                 <div className={styles.header}>
                   <p className={styles.timeframe}>July 2011 - June 2015</p>
                   <h3 className={styles.name}>University of Life</h3>
@@ -156,7 +156,7 @@ export default function About() {
               </div>
 
               <div className={styles.block}>
-                <div className={styles.bullet}></div>
+                <div className={styles.bullet} />
                 <div className={styles.header}>
                   <p className={styles.timeframe}>July 2009 - June 2011</p>
                   <h3 className={styles.name}>State Design University</h3>
@@ -172,7 +172,7 @@ export default function About() {
               </div>
 
               <div className={styles.block}>
-                <div className={styles.bullet}></div>
+                <div className={styles.bullet} />
                 <div className={styles.header}>
                   <p className={styles.timeframe}>July 2005 - June 2009</p>
                   <h3 className={styles.name}>School of Hard Knocks</h3>

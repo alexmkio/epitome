@@ -13,7 +13,7 @@ export default function Philosophy() {
         alt="Philosophy background"
         className={styles["background-image"]}
       />
-      <div className={styles.overlay}></div>
+      <div className={styles.overlay} />
       <motion.div className={styles.headingRow} {...animationOptions}>
         <div className={styles.headingColumn}>
           <h2>Development Philosophy</h2>
