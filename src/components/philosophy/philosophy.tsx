@@ -1,11 +1,18 @@
+import Image from "next/image";
 import styles from "./philosophy.module.scss";
 import { Element as ReactScrollElement } from "react-scroll";
 import { motion } from "framer-motion";
 import { animationOptions } from "../../utils/constants";
+import philosophyBackground from "../../../public/assets/images/services-bg.webp";
 
 export default function Philosophy() {
   return (
     <ReactScrollElement name="philosophy" className={styles.philosophy}>
+      <Image
+        src={philosophyBackground}
+        alt="Philosophy background"
+        className={styles["background-image"]}
+      />
       <div className={styles.overlay}></div>
       <motion.div className={styles.headingRow} {...animationOptions}>
         <div className={styles.headingColumn}>
