@@ -40,13 +40,13 @@
     background: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, black 80%);
   }
 
-  .headingRow {
+  .heading-row {
     @include mixins.row;
     @include mixins.heading-block;
     @include mixins.heading-block-center;
   }
 
-  .headingColumn {
+  .heading-column {
     @include mixins.column;
     @include mixins.large-full;
   }
@@ -66,16 +66,16 @@
     }
   }
 
-  .sectionDescription {
+  .section-description {
     @include mixins.section-desc;
   }
 
   h2,
-  .sectionDescription {
+  .section-description {
     @include mixins.color-white;
   }
 
-  .philosophyList {
+  .philosophy-list {
     @include mixins.row;
 
     max-width: 1240px;
@@ -97,7 +97,7 @@
     @include mixins.block-tab-full;
   }
 
-  .philosophyItemContainer {
+  .philosophy-item-container {
     @include mixins.column;
 
     margin-bottom: 2.4rem;
@@ -122,7 +122,7 @@
     }
   }
 
-  .philosophyItemContent {
+  .philosophy-item-content {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 3.6rem;
 

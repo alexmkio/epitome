@@ -37,8 +37,8 @@ export default function Carousel() {
   };
   return (
     <section className={styles.testimonials}>
-      <motion.div className={styles.headingRow} {...animationOptions}>
-        <Slider {...settings} className={styles.headingColumn}>
+      <motion.div className={styles["heading-row"]} {...animationOptions}>
+        <Slider {...settings} className={styles["heading-column"]}>
           <article>
             <p>
               Molestiae incidunt consequatur quis ipsa autem nam sit enim magni.
