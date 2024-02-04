@@ -4,6 +4,9 @@ import Slider from "react-slick";
 import { motion } from "framer-motion";
 import styles from "./slider.module.scss";
 import { animationOptions } from "../../utils/constants";
+import userOne from "../../../public/assets/images/user-01.webp";
+import userTwo from "../../../public/assets/images/user-02.webp";
+import userThree from "../../../public/assets/images/user-03.webp";
 
 export default function Carousel() {
   const settings = {
@@ -34,8 +37,8 @@ export default function Carousel() {
   };
   return (
     <section className={styles.testimonials}>
-      <motion.div className={styles.headingRow} {...animationOptions}>
-        <Slider {...settings} className={styles.headingColumn}>
+      <motion.div className={styles["heading-row"]} {...animationOptions}>
+        <Slider {...settings} className={styles["heading-column"]}>
           <article>
             <p>
               Molestiae incidunt consequatur quis ipsa autem nam sit enim magni.
@@ -45,9 +48,7 @@ export default function Carousel() {
             </p>
             <div className={styles.info}>
               <Image
-                src="/assets/images/user-01.webp"
-                width={300}
-                height={300}
+                src={userOne}
                 alt="Author image"
                 className={styles.avatar}
               />
@@ -66,9 +67,7 @@ export default function Carousel() {
             </p>
             <div className={styles.info}>
               <Image
-                src="/assets/images/user-02.webp"
-                width={300}
-                height={300}
+                src={userTwo}
                 alt="Author image"
                 className={styles.avatar}
               />
@@ -87,9 +86,7 @@ export default function Carousel() {
             </p>
             <div className={styles.info}>
               <Image
-                src="/assets/images/user-03.webp"
-                width={300}
-                height={300}
+                src={userThree}
                 alt="Author image"
                 className={styles.avatar}
               />

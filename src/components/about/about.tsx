@@ -1,19 +1,22 @@
+import Image from "next/image";
 import styles from "./about.module.scss";
 import { Element as ReactScrollElement } from "react-scroll";
 import { motion } from "framer-motion";
 import { animationOptions } from "../../utils/constants";
+import workIcon from "../../../public/assets/icons/icon-briefcase.svg";
+import educationIcon from "../../../public/assets/icons/icon-education.svg";
 
 export default function About() {
   return (
     <ReactScrollElement name="about" className={styles.about}>
       <div>
-        <motion.div className={styles.headingRow} {...animationOptions}>
-          <div className={styles.headingColumn}>
+        <motion.div className={styles["heading-row"]} {...animationOptions}>
+          <div className={styles["heading-column"]}>
             <h2>About Me</h2>
           </div>
         </motion.div>
-        <motion.div className={styles.aboutMeRow} {...animationOptions}>
-          <div className={styles.aboutMeColumn}>
+        <motion.div className={styles["about-me-row"]} {...animationOptions}>
+          <div className={styles["about-me-column"]}>
             <p>
               Nulla aspernatur nam et accusantium. Tempore delectus dignissimos
               aut ab commodi. Labore et cupiditate temporibus odio debitis
@@ -46,14 +49,14 @@ export default function About() {
             </p>
           </div>
         </motion.div>
-        <div className={styles.aboutMeButtons}>
+        <div className={styles["about-me-buttons"]}>
           <motion.div {...animationOptions}>
-            <a href="#0" className={styles.btnStroke}>
+            <a href="#0" className={styles["btn-stroke"]}>
               Hire Me
             </a>
           </motion.div>
           <motion.div {...animationOptions}>
-            <a href="#0" className={styles.btnPrimary}>
+            <a href="#0" className={styles["btn-primary"]}>
               Download CV
             </a>
           </motion.div>
@@ -61,19 +64,26 @@ export default function About() {
       </div>
 
       <div>
-        <motion.div className={styles.headingRow} {...animationOptions}>
-          <div className={styles.headingColumn}>
+        <motion.div className={styles["heading-row"]} {...animationOptions}>
+          <div className={styles["heading-column"]}>
             <h2>Work & Education</h2>
           </div>
         </motion.div>
-        <div className={styles.experienceRow}>
-          <motion.div className={styles.experienceColumn} {...animationOptions}>
+        <div className={styles["experience-row"]}>
+          <motion.div
+            className={styles["experience-column"]}
+            {...animationOptions}
+          >
             <div className={styles.timeline}>
-              <div className={styles.iconWrap}>
-                <span className={styles.workIcon}></span>
+              <div className={styles["icon-wrap"]}>
+                <Image
+                  src={workIcon}
+                  alt="icon of a briefcase"
+                  className={styles["work-icon"]}
+                />
               </div>
               <div className={styles.block}>
-                <div className={styles.bullet}></div>
+                <div className={styles.bullet} />
                 <div className={styles.header}>
                   <p className={styles.timeframe}>July 2018 - Present</p>
                   <h3 className={styles.name}>Awesome Studio</h3>
@@ -89,7 +99,7 @@ export default function About() {
               </div>
 
               <div className={styles.block}>
-                <div className={styles.bullet}></div>
+                <div className={styles.bullet} />
                 <div className={styles.header}>
                   <p className={styles.timeframe}>July 2017 - June 2018</p>
                   <h3 className={styles.name}>Super Cool Agency</h3>
@@ -105,7 +115,7 @@ export default function About() {
               </div>
 
               <div className={styles.block}>
-                <div className={styles.bullet}></div>
+                <div className={styles.bullet} />
                 <div className={styles.header}>
                   <p className={styles.timeframe}>March 2016 - June 2017</p>
                   <h3 className={styles.name}>Epic Design Studio</h3>
@@ -122,14 +132,21 @@ export default function About() {
             </div>
           </motion.div>
 
-          <motion.div className={styles.experienceColumn} {...animationOptions}>
+          <motion.div
+            className={styles["experience-column"]}
+            {...animationOptions}
+          >
             <div className={styles.timeline}>
-              <div className={styles.iconWrap}>
-                <span className={styles.educationIcon}></span>
+              <div className={styles["icon-wrap"]}>
+                <Image
+                  src={educationIcon}
+                  alt="icon of a graduation cap"
+                  className={styles["education-icon"]}
+                />
               </div>
 
               <div className={styles.block}>
-                <div className={styles.bullet}></div>
+                <div className={styles.bullet} />
                 <div className={styles.header}>
                   <p className={styles.timeframe}>July 2011 - June 2015</p>
                   <h3 className={styles.name}>University of Life</h3>
@@ -145,7 +162,7 @@ export default function About() {
               </div>
 
               <div className={styles.block}>
-                <div className={styles.bullet}></div>
+                <div className={styles.bullet} />
                 <div className={styles.header}>
                   <p className={styles.timeframe}>July 2009 - June 2011</p>
                   <h3 className={styles.name}>State Design University</h3>
@@ -161,7 +178,7 @@ export default function About() {
               </div>
 
               <div className={styles.block}>
-                <div className={styles.bullet}></div>
+                <div className={styles.bullet} />
                 <div className={styles.header}>
                   <p className={styles.timeframe}>July 2005 - June 2009</p>
                   <h3 className={styles.name}>School of Hard Knocks</h3>

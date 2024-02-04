@@ -1,26 +1,33 @@
+import Image from "next/image";
 import styles from "./philosophy.module.scss";
 import { Element as ReactScrollElement } from "react-scroll";
 import { motion } from "framer-motion";
 import { animationOptions } from "../../utils/constants";
+import philosophyBackground from "../../../public/assets/images/services-bg.webp";
 
 export default function Philosophy() {
   return (
     <ReactScrollElement name="philosophy" className={styles.philosophy}>
-      <div className={styles.overlay}></div>
-      <motion.div className={styles.headingRow} {...animationOptions}>
-        <div className={styles.headingColumn}>
+      <Image
+        src={philosophyBackground}
+        alt="Philosophy background"
+        className={styles["background-image"]}
+      />
+      <div className={styles.overlay} />
+      <motion.div className={styles["heading-row"]} {...animationOptions}>
+        <div className={styles["heading-column"]}>
           <h2>Development Philosophy</h2>
-          <p className={styles.sectionDescription}>
+          <p className={styles["section-description"]}>
             My passion and goal is to help you make your business standout.
           </p>
         </div>
       </motion.div>
-      <div className={styles.philosophyList}>
+      <div className={styles["philosophy-list"]}>
         <motion.div
-          className={styles.philosophyItemContainer}
+          className={styles["philosophy-item-container"]}
           {...animationOptions}
         >
-          <div className={styles.philosophyItemContent}>
+          <div className={styles["philosophy-item-content"]}>
             <h3>Brand Identity</h3>
             <p>
               Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur
@@ -31,10 +38,10 @@ export default function Philosophy() {
           </div>
         </motion.div>
         <motion.div
-          className={styles.philosophyItemContainer}
+          className={styles["philosophy-item-container"]}
           {...animationOptions}
         >
-          <div className={styles.philosophyItemContent}>
+          <div className={styles["philosophy-item-content"]}>
             <h3>Illustration</h3>
             <p>
               Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur
@@ -45,10 +52,10 @@ export default function Philosophy() {
           </div>
         </motion.div>
         <motion.div
-          className={styles.philosophyItemContainer}
+          className={styles["philosophy-item-container"]}
           {...animationOptions}
         >
-          <div className={styles.philosophyItemContent}>
+          <div className={styles["philosophy-item-content"]}>
             <h3>Web Design</h3>
             <p>
               Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur
@@ -59,10 +66,10 @@ export default function Philosophy() {
           </div>
         </motion.div>
         <motion.div
-          className={styles.philosophyItemContainer}
+          className={styles["philosophy-item-container"]}
           {...animationOptions}
         >
-          <div className={styles.philosophyItemContent}>
+          <div className={styles["philosophy-item-content"]}>
             <h3>Product Strategy</h3>
             <p>
               Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur
@@ -73,10 +80,10 @@ export default function Philosophy() {
           </div>
         </motion.div>
         <motion.div
-          className={styles.philosophyItemContainer}
+          className={styles["philosophy-item-container"]}
           {...animationOptions}
         >
-          <div className={styles.philosophyItemContent}>
+          <div className={styles["philosophy-item-content"]}>
             <h3>UI/UX Design</h3>
             <p>
               Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur
@@ -87,10 +94,10 @@ export default function Philosophy() {
           </div>
         </motion.div>
         <motion.div
-          className={styles.philosophyItemContainer}
+          className={styles["philosophy-item-container"]}
           {...animationOptions}
         >
-          <div className={styles.philosophyItemContent}>
+          <div className={styles["philosophy-item-content"]}>
             <h3>Mobile Design</h3>
             <p>
               Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur
